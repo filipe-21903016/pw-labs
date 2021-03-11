@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quizz</title>
+</head>
+
+<body>
+    <h3>Quizz</h3>
+    <form autocomplete="off" method="POST" action="mailto:filipezarcocoutinho@gmail.com">
+        <fieldset>
+            <legend>Informação Pessoal</legend>
+            <label for="nome">Name:</label>
+            <input type="text" id="nome" name="nome" placeholder="Nome" size="20" maxlength="20" required><br>
+            <label for="apelido">Apelido</label>
+            <input type="text" id="apelido" name="apelido" placeholder="Apelido" size="20" maxlength="20" required><br>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Email" size="20" required><br>
+        </fieldset>
+        <br>
+        
+        <fieldset>
+            <legend>Questões</legend>
+            <label for="pais">A que país pertence Roma?</label>
+            <input type="text" id="pais" name="pais"><br>
+
+            <p>Qual o menor estado do mundo?</p>
+
+            <input type="radio" id="estado_afeganistao" name="estado" value="afeganistao">
+            <label for="estado_afeganistao">Afeganistão</label>
+            <br>
+            <input type="radio" id="estado_michigan" name="estado" value="michigan">
+            <label for="estado_michigan">Michigan</label>
+            <br>
+            <input type="radio" id="estado_vaticano" name="estado" value="vaticano">
+            <label for="estado_vaticano">Vaticano</label>
+
+            <br>
+
+            <p>Quais foram os últimos 2 Papas?</p>
+            <input type="checkbox" id="bentoXVI" name="papa" value="bentoXVI">
+            <label for="bentoXVI">Bento XVI</label>
+            <br>
+            <input type="checkbox" id="pauloVI" name="papa" value="pauloVI">
+            <label for="pauloVI">São Paulo VI</label>
+            <br>
+            <input type="checkbox" id="joaoPauloVI" name="papa" value="joaoPauloVI">
+            <label for="joaoPauloVI">Venerável João Paulo I</label>
+            <br>
+            <input type="checkbox" id="francisco" name="papa" value="francisco">
+            <label for="francisco">Francisco</label>
+            
+            <br><br>
+            <label for="dataEleicao">Quando foi eleito presidente Sergio Mattarella? </label>
+            <input type="date" id="dataEleicao" name="dataEleicao">
+
+            <p>Seleciona as duas cores da bandeira de Roma</p>
+            <input type="color" id="leftColor" name="leftColor">
+            <input type="color" id="rightColor" name="rightColor">
+
+            <br><br>
+            <label>Em que ano morreu Júlio César ?</label>
+            <input type="number" id="number" name="number"> ac.
+
+            <br><br>
+            <label for="range">De 0-100 avalie o website</label>
+            <input type="range" min="0" max="100" id="range" name="rating" step="5">
+
+            <br><br>
+            <label for="uploadImg">Faça o upload de duas fotos a seu gosto de Roma</label>
+            <input type="file" id="uploadImg" name="upload" multiple>
+
+            
+            <br><br>
+            <input type="submit">
+        </fieldset>
+    </form>
+</body>
+
+</html>
