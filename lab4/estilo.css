@@ -1,0 +1,101 @@
+*{
+    font-family: 'Roboto Mono', monospace;
+}
+
+body{
+    background-color:aliceblue;
+}
+form{
+    background-color: rgb(190, 221, 248);
+    border-radius: 1%;
+}
+footer{
+    background-color: lightskyblue;
+    
+}
+nav,h3{
+    text-align: center;
+}
+
+nav:hover{
+    background-color: rgb(210, 161, 255);
+}
+nav>a:hover{
+    background-color: aliceblue;
+    font-size: 25px;
+}
+
+#poema{
+    text-align: center;
+    padding-left: 40%;
+    padding-right: 40%;
+    width: 20%;
+}
+
+
+
+section[class="topic"]{
+    background-color: rgba(150, 165, 252, 0.575);
+    border-radius: 1%;
+}
+
+.topic::first-letter{
+    font-size: x-large;
+}
+
+
+#html5_table>tbody>tr:nth-child(odd){
+    background-color: rgb(166, 201, 255);
+}
+
+.checked{
+    background-color: rgb(83, 255, 121);
+}
+#not_checked{
+    background-color: rgb(247, 83, 83);
+}
+
+tfoot{
+    background-color: rgb(152, 137, 255);
+}
+
+thead{
+    background-color: peachpuff;
+    font-weight: bold;
+}
+
+td{
+    text-align: center;
+}
+.table_info{
+    background-color: lavender;
+}
+.table_subtopic{
+    background-color: plum;
+}
+
+fieldset>span{
+    display: block;
+}
+
+input[type="range"]{
+    float:right ;
+    margin-right: 625px;
+}
+
+label.radio{
+    margin-left: 25px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
