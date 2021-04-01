@@ -1,0 +1,267 @@
+*{
+    font-family: 'Roboto Mono', monospace;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:aliceblue;
+}
+form{
+    background-color: rgb(190, 221, 248);
+    border-radius: 1%;
+}
+footer{
+    background-color: lightskyblue;
+    text-align: center;
+    
+}
+nav,h3{
+    text-align: center;
+}
+
+#poema{
+    text-align: center;
+    width: 20%;
+}
+
+section[class="topic"]{
+    background-color: rgba(150, 165, 252, 0.575);
+    border-radius: 1%;
+}
+
+.topic::first-letter{
+    font-size: x-large;
+}
+
+
+#html5_table>tbody>tr:nth-child(odd){
+    background-color: rgb(166, 201, 255);
+}
+
+.checked{
+    background-color: rgb(83, 255, 121);
+}
+#not_checked{
+    background-color: rgb(247, 83, 83);
+}
+
+tfoot{
+    background-color: rgb(152, 137, 255);
+}
+
+thead{
+    background-color: peachpuff;
+    font-weight: bold;
+}
+
+td{
+    text-align: center;
+}
+.table_info{
+    background-color: lavender;
+}
+.table_subtopic{
+    background-color: plum;
+}
+
+fieldset>span{
+    display: block;
+}
+
+input[type="range"]{
+    float:right ;
+    margin-right: 625px;
+}
+
+label.radio{
+    margin-left: 25px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+img{
+    width: auto;
+}
+
+.grid-container{
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+            "item1 item2";
+}
+
+.item2>p{
+    text-align: center;
+    vertical-align: center;
+    padding: 25% 25% 25% 25%;
+    
+}
+
+.aside-gallery{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(8,5vw);
+    grid-gap:15px;
+}
+
+.gallery-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-item1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end:4;
+}
+
+.gallery-item2{
+    grid-column-start: 5;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end:4;
+}
+
+.gallery-item3{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end:7;
+}
+
+.gallery-item4{
+    grid-column-start: 5;
+    grid-column-end: 8;
+    grid-row-start: 4;
+    grid-row-end:7;
+}
+
+.flex-container{
+    display: flex;
+    justify-content:space-evenly;
+}
+
+nav a{
+    padding: 10px 20px 10px 12px;
+    border-radius: 15px;
+    background-color: rgb(106, 158, 255);
+    top:0px;
+    transition: 100ms;
+    position: relative;
+}
+
+nav a:hover{
+    top:-10px;
+   background-color: rgb(71, 135, 255);
+   border-style:solid;
+   border-color:rgba(0, 0, 0, 0.233);
+}
+
+.flex-gallery{
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.galeria-row2{
+    filter: blur(1px) invert(100%);
+}
+
+@keyframes shaking{
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.row2 > figure > img:hover{
+    animation: shaking 0.5s infinite;
+}
+
+.row3 > figure > img:hover{
+    animation: shaking 0.5s infinite;
+}
+
+.galeria-row3{
+    filter: brightness(50%) drop-shadow(-17px -7px 7px #000000);
+}
+
+@keyframes slidein{
+    0%{
+        transform: translateX(3000px);
+    }
+}
+
+@keyframes dropdown{
+    0%{
+        transform: translateY(-1000px);
+    }
+}
+
+header{
+    animation: slidein 1s;
+}
+
+nav{
+    animation: dropdown 1.5s;
+}
+
+@media screen and (max-width:1200px){
+    .grid-container{
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+            'item1'
+            'item2';
+    }
+
+    .item2>p{
+    text-align: center;
+    vertical-align: center;   
+    }
+
+    .flex-container{
+    display: flex;
+    row-gap: 10px;
+    flex-direction: column;
+    }
+
+    nav a:hover{
+    top:-3px;
+    background-color: rgb(71, 135, 255);
+    border-style:solid;
+    border-color:rgba(0, 0, 0, 0.233);
+    }
+
+    .galeria{
+        display: flexbox;
+    }
+
+    .galeria-item{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
